@@ -1,20 +1,19 @@
 package main.clases;
 
 import java.util.List;
+import java.util.Map;
 
 public class Torneo {
 	private List<Equipo> equipos;
 	private Equipo ganador;
-	// TODO: cambiar a Map
-	private List<Equipo> posiciones;
-	private List<Jugador> goleadores;
+	private Map<Equipo, Integer> posiciones;
+	private Map<Jugador, Integer> goleadores;
 	private List<Partido> partidos;
 	private String copa;
 	
-	public Torneo(List<Equipo> equipos, Equipo ganador, List<Equipo> posiciones, List<Jugador> goleadores,
+	public Torneo(List<Equipo> equipos, Map<Equipo, Integer> posiciones, Map<Jugador, Integer> goleadores,
 			String copa) {
 		this.equipos = equipos;
-		this.ganador = ganador;
 		this.posiciones = posiciones;
 		this.goleadores = goleadores;
 		this.copa = copa;
